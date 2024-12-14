@@ -88,7 +88,7 @@ def main():
     # take care of errors
     dp.add_error_handler(dev.error_handler)
     # start bot
-    updater.start_polling(clean=True)
+    updater.start_polling(drop_pending_updates=True)
     updater.job_queue.run_repeating(stats.reload_sorted_players, 60*60*24, name="reload_sorted", first=0)
     updater.idle()
 
