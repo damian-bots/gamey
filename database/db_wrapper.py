@@ -8,7 +8,7 @@ import json
 class Database:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.logger.debug("Database init")
+        self.logger.debug("mongodb+srv://tusar:tusar1@cluster0.guw5d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
         self.db = MongoClient()
         self.db = self.db["chameleonbot"]
         self.cards = {}
