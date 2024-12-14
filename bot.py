@@ -1,4 +1,5 @@
-from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, Filters, MessageHandler, InlineQueryHandler
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, InlineQueryHandler
+from telegram.ext.filters import Filters
 import functools
 import logging
 
